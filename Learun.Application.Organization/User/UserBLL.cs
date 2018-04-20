@@ -587,8 +587,8 @@ namespace Learun.Application.Organization
                 userEntity.LoginOk = false;
                 if (userEntity.F_EnabledMark == 1)
                 {
-                    string dbPassword = Md5Helper.Encrypt(DESEncrypt.Encrypt(password.ToLower(), userEntity.F_Secretkey).ToLower(), 32).ToLower();
-                    if (dbPassword == userEntity.F_Password)
+                   // string dbPassword = Md5Helper.Encrypt(DESEncrypt.Encrypt(password.ToLower(), userEntity.F_Secretkey).ToLower(), 32).ToLower();
+                    if (password.ToLower() == userEntity.F_Password.ToLower())
                     {
                         userEntity.LoginOk = true;
                     }
