@@ -48,7 +48,7 @@
                         else if (dfop.type == "default" || dfop.type == "multiple") {
                             for (var i = 0, l = dfop.data.length; i < l; i++) {
                                 var _item = dfop.data[i];
-                                if (!keyword || _item[dfop.text].indexOf(keyword) != -1) {
+                                if (!keyword || _item[dfop.text].toLowerCase().indexOf(keyword.toLowerCase()) != -1) {
                                     _item._lrhide = false;
                                 }
                                 else {
