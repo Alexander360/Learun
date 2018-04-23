@@ -38,7 +38,7 @@ namespace Learun.Util
             var ip = GetWebRemoteIp();
             foreach (var hostAddress in Dns.GetHostAddresses(ip))
             {
-                if (hostAddress.AddressFamily == AddressFamily.InterNetwork)
+                if (hostAddress.AddressFamily == AddressFamily.InterNetwork|| hostAddress.AddressFamily==AddressFamily.InterNetworkV6)
                     return hostAddress.ToString();
             }
             return string.Empty;
@@ -64,8 +64,7 @@ namespace Learun.Util
             }
             return string.Empty;
         }
-        #endregion
-
+        #endregion   
         #region Host(获取主机名)
         /// <summary>
         /// 获取主机名
