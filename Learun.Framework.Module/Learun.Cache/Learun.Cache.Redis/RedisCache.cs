@@ -678,9 +678,7 @@ namespace Learun.Cache.Redis
         /// </summary>
         public static void RemoveAll(int dbId = 0)
         {
-            var db = GetDataBase(dbId);
-            Instance.GetEndPoints();
-            Instance.GetServer(redisConfigInfo.ReadServerList).FlushDatabase();
+            Instance.GetServer(redisConfigInfo.ReadServerList).FlushDatabase(dbId);
         }
         #endregion
     }
