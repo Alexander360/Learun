@@ -68,6 +68,10 @@
     <Compile Include="RedisConfigInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Learun.Util\Learun.Util\Learun.Util.csproj">
+      <Project>{cf8ae293-88ab-436c-9720-a8386ba5d7b7}</Project>
+      <Name>Learun.Util</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Learun.Cache.Base\Learun.Cache.Base.csproj">
       <Project>{975f2cb8-605c-4add-b365-b97bf844f0fe}</Project>
       <Name>Learun.Cache.Base</Name>
