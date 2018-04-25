@@ -1,5 +1,4 @@
 LeaRun.Framework V6.1.6.2
-redis ¿âÊý¾Ý·ÖÅä
-0 »ù´¡ÐÅÏ¢:¹¦ÄÜÄ£¿éÊý¾Ý
-1 µÇÂ¼ÐÅÏ¢
-
+redis åº“æ•°æ®åˆ†é…
+0 åŸºç¡€ä¿¡æ¯:åŠŸèƒ½æ¨¡å—æ•°æ®
+1 ç™»å½•ä¿¡æ¯
