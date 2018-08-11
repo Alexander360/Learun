@@ -14,6 +14,8 @@
 
     <link href="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
     <link href="~/Content/jquery/plugin/jfGrid/jfgrid.css" rel="stylesheet" />
+    <link href="~/Content/jqwidgets/styles/jqx.base.css" rel="stylesheet" />
+    <link href="~/Content/jqwidgets/styles/jqx.metro.css" rel="stylesheet" />
 
     @Html.AppendCssFile(
     "/Views/LR_Content/style/lr-common.css",
@@ -27,17 +29,25 @@
     )
     <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
     <script src="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="~/Content/jquery/plugin/jfGrid/jfgrid.min.js"></script>
     <script src="~/Content/jquery/plugin/jqprint/jquery.jqprint-0.3.js"></script>
     <script src="~/Content/datepicker/WdatePicker.js"></script>
+    <script src="~/Content/jquery/plugin/jfGrid/jfgrid.min.js"></script>
+    <script src="~/Content/jqwidgets/jqxcore.js"></script>
+    <script src="~/Content/jqwidgets/jqxdata.js"></script>
+    <script src="~/Content/jqwidgets/jqxbuttons.js"></script>
+    <script src="~/Content/jqwidgets/jqxgrid.js"></script>
+    <script src="~/Content/jqwidgets/jqxgrid.aggregates.js"></script>
+    <script src="~/Content/jqwidgets/jqxgrid.selection.js"></script>
+    <script src="~/Content/jqwidgets/jqxgrid.edit.js"></script>
+    <script src="~/Content/jqwidgets/jqxgrid.export.js"></script>
     <!--[if lt IE 9]>
       <script src="~/Content/bootstrap/html5shiv.min.js"></script>
       <script src="~/Content/bootstrap/respond.min.js"></script>
     <![endif]-->
     <script>
-    function request(d) { for (var c = location.search.slice(1).split("&"), a = 0; a < c.length; a++) { var b = c[a].split("="); if (b[0] == d) if ("undefined" == unescape(b[1])) break; else return unescape(b[1]) } return "" };
+        function request(d) { for (var c = location.search.slice(1).split("&"), a = 0; a < c.length; a++) { var b = c[a].split("="); if (b[0] == d) if ("undefined" == unescape(b[1])) break; else return unescape(b[1]) } return "" };
     </script>
-   
+
 </head>
 <body class="@Learun.Util.Net.Browser @Learun.Util.WebHelper.GetUITheme()">
     <div id="lr_form_bg" class="lr-form-bg"></div>
